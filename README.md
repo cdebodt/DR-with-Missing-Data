@@ -1,51 +1,39 @@
 # DR-with-Missing-Data
-Nonlinear Dimensionality Reduction with Missing Data using Parametric Multiple Imputations
+Nonlinear Dimensionality Reduction with Missing Data using Parametric Multiple Imputation
 
-==========
+-------
 
 
-
-%%%% !!! IMPORTANT NOTE !!! %%%%
-
+## IMPORTANT NOTE
 At the end of the dr_missing_data.py file, a demo presents how this python code can be used. Running this file (python dr_missing_data.py) will run the demo. Importing this module will not run the demo. The demo takes a few minutes. Do not forget to download the 'data' folder next to the dr_missing_data.py file to be able to run the demo. 
 
-%%%% !!! -------------- !!! %%%%
+------
 
 
 The python code dr_missing_data.py implements a framework to deal with missing data in dimensionality reduction (DR). 
 
-The methodology which is implemented is described in the article "Nonlinear Dimensionality Reduction with Missing Data using Parametric Multiple Imputations", from Cyril de Bodt, Dounia Mulders, Michel Verleysen and John A. Lee, published in IEEE Transactions on Neural Networks and Learning Systems, in 2019. 
-
-Link to retrieve the article: https://ieeexplore.ieee.org/abstract/document/8447227
+The methodology which is implemented is described in the article [Nonlinear Dimensionality Reduction with Missing Data using Parametric Multiple Imputations](https://ieeexplore.ieee.org/abstract/document/8447227), from Cyril de Bodt, Dounia Mulders, Michel Verleysen and John A. Lee, published in IEEE Transactions on Neural Networks and Learning Systems, in 2019. 
 
 At the end of the dr_missing_data.py file, a demo presents how this python code can be used. Running this file (python dr_missing_data.py) will run the demo. Importing this module will not run the demo. The demo takes a few minutes. The tested versions of the imported packages are specified below. 
 
 Do not forget to download the 'data' folder next to the dr_missing_data.py file to be able to run the demo. 
 
-
-If you use the dr_missing_data.py code or the article, please cite as: 
+If you use the dr_missing_data.py code or the article, please cite as:
 - de Bodt, C., Mulders, D., Verleysen, M., & Lee, J. A. (2019). Nonlinear Dimensionality Reduction With Missing Data Using Parametric Multiple Imputations. IEEE transactions on neural networks and learning systems, 30(4), 1166-1179.
 - BibTeX entry:
-
+```
 @article{cdb2019drnap,
-
-  title={{N}onlinear {D}imensionality {R}eduction with {M}issing {D}ata using {P}arametric {M}ultiple {I}mputations},
-  
-  author={de Bodt, C. and Mulders, D. and Verleysen, M. and Lee, J. A.},
-  
-  journal={{IEEE} Trans. Neural Netw. Learn. Syst.},
-  
-  volume={30},
-  
-  number={4},
-  
-  pages={1166--1179},
-  
-  year={2019}
-  
+  title={{N}onlinear {D}imensionality {R}eduction with {M}issing {D}ata using {P}arametric {M}ultiple {I}mputations},  
+  author={de Bodt, C. and Mulders, D. and Verleysen, M. and Lee, J. A.},  
+  journal={{IEEE} Trans. Neural Netw. Learn. Syst.},  
+  volume={30},  
+  number={4},  
+  pages={1166--1179},  
+  year={2019}  
 }
+```
 
-
+## Running
 The main functions of the dr_missing_data.py file are:
 - 'mssne_implem': nonlinear dimensionality reduction through multi-scale SNE (Ms SNE), as presented in the reference [2] below and summarized in [1]. This function enables reducing the dimension of a complete data set. 
 - 'gmm_fit_K', 'gmm_sev_em_fitting' and 'gmm_sev_sampling': Gaussian mixture modeling of a complete or incomplete data set, as presented in [7, 8, 9] and summarized in [1]. These functions respectively enable to:
@@ -68,8 +56,7 @@ The main functions of the dr_missing_data.py file are:
 
 The documentations of the functions describe their parameters. The demo shows how they can be used. 
 
-
-Notations:
+## Notations
 - DR: dimensionality reduction.
 - HD: high-dimensional.
 - LD: low-dimensional.
@@ -80,8 +67,7 @@ Notations:
 - Ms SNE: multi-scale stochastic neighbor embedding.
 
 
-References:
-
+## References
 [1] de Bodt, C., Mulders, D., Verleysen, M., & Lee, J. A. (2019). Nonlinear Dimensionality Reduction With Missing Data Using Parametric Multiple Imputations. IEEE transactions on neural networks and learning systems, 30(4), 1166-1179.
 
 [2] Lee, J. A., Peluffo-Ordóñez, D. H., & Verleysen, M. (2015). Multi-scale similarities in stochastic neighbour embedding: Reducing dimensionality while preserving both local and global structure. Neurocomputing, 169, 246-261.
@@ -112,7 +98,7 @@ References:
 
 [15] Van Hulse, J., & Khoshgoftaar, T. M. (2014). Incomplete-case nearest neighbor imputation in software measurement data. Information Sciences, 259, 596-610.
 
-
+## Contact - Misc
 author: Cyril de Bodt (ICTEAM - UCLouvain)
 
 @email: cyril __dot__ debodt __at__ uclouvain.be
